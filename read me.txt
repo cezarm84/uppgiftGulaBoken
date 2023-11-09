@@ -1,0 +1,71 @@
+
+
+
+ Den gula boken:
+
+ Översikt
+
+Denna applikation är ett telefonbokssystem som låter användare hantera profiler, söka efter profiler och utföra grundläggande CRUD-operationer. Applikationen är utformad med två användarroller: Admin och Gäst.
+
+ Funktioner
+
+Admin-användare:
+
+    adminUsername = "admin";
+    adminPassword = "123456";
+
+  - Skapa, uppdatera och ta bort profiler.
+  - Visa alla profiler i databasen.
+  - Autentisera med användarnamn och lösenord.
+
+- Gäst-användare:
+  - Söka efter profiler baserat på användarinput.
+  - Visa profilinformation.
+  - Navigera tillbaka till huvudmenyn eller avsluta applikationen.
+
+Klasser och gränssnitt
+
+Klasser:
+
+1. Address:
+   - Representerar adressinformation för en profil.
+
+2. PhoneNumber:
+   - Representerar ett telefonnummer och typer till en profil.
+
+3. Profile:
+   - Representerar en profil med förnamn, efternamn, ålder, adress och telefonnummer.
+
+4. ProfileFactory:
+   - Factory-klass för att skapa profiler med föregånde data.
+
+5. AdminUser:
+   - Implementerar användargränssnittet för admin med funktioner som skapa, uppdatera och ta bort profiler.
+
+6. GuestUser:
+   - Implementerar användargränssnittet för gäst med sök- och visning.
+
+7. PhoneBook:
+   - Hanterar samlingen av profiler, tillhandahåller metoder för CRUD-operationer och hanterar datalagring.
+
+ Gränssnitt:
+
+1. User:
+   - Definierar det gemensamma menymetoden för både AdminUser och GuestUser.
+
+2. Searchable:
+   - Gränssnitt med en metod för att skriva ut sökresultat.
+
+
+ Användning
+
+1. Välj användartyp (Admin eller Gäst).
+2. Ange inloggningsuppgifter (för Admin) eller börja använda appen (för Gäst).
+3. Följ menyn på skärmen för att utföra olika åtgärder.
+
+
+
+- Profiler sparas och laddas från en fil (phonebook_data.dat) 
+
+
+
