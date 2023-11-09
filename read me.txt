@@ -5,7 +5,9 @@
 
  Översikt
 
-Denna applikation är ett telefonbokssystem som låter användare hantera profiler, söka efter profiler och utföra grundläggande CRUD-operationer. Applikationen är utformad med två användarroller: Admin och Gäst.
+Denna applikation är ett telefonbokssystem som låter användare hantera profiler, 
+söka efter profiler och utföra grundläggande CRUD-operationer. 
+Applikationen är utformad med två användarroller: Admin och Gäst.
 
  Funktioner
 
