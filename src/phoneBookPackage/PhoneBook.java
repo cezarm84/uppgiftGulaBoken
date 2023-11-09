@@ -46,11 +46,11 @@ public class PhoneBook {
                         System.out.println("Enter Admin Password:");
                         String adminPassword = scanner.next();
 
-                        if (authenticateAdmin(adminUsername, adminPassword)) {
+                        if (isAdmin(adminUsername, adminPassword)) {
                             user = new AdminUser(adminUsername, adminPassword, phoneBook);
                             user.menu();
                         } else {
-                            System.out.println("Authentication failed. You are not an admin.");
+                            System.out.println("You are not an admin.");
                         }
                     } else if (userType.equalsIgnoreCase("guest")) {
                         user = new GuestUser(phoneBook);
@@ -92,13 +92,13 @@ public class PhoneBook {
         }
     }
 
-    private static boolean authenticateAdmin(String providedUsername, String providedPassword) {
+    private static boolean isAdmin(String Username, String Password) {
         //  admin username och password
         String adminUsername = "admin";
         String adminPassword = "123456";
 
         // kolla om rätt värde
-        return adminUsername.equals(providedUsername) && adminPassword.equals(providedPassword);
+        return adminUsername.equals(Username) && adminPassword.equals(Password);
     }
 
     public void createProfile(Profile profile) {
