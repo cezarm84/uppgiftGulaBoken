@@ -18,12 +18,12 @@ Admin-användare:
 
   - Skapa, uppdatera och ta bort profiler.
   - Visa alla profiler i databasen.
-  - Autentisera med användarnamn och lösenord.
+  - logga in med användarnamn och lösenord.
 
 - Gäst-användare:
   - Söka efter profiler baserat på användarinput.
   - Visa profilinformation.
-  - Navigera tillbaka till huvudmenyn eller avsluta applikationen.
+  - tillbaka till huvudmenyn eller avsluta applikationen.
 
 Klasser och gränssnitt
 
