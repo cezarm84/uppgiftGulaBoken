@@ -152,6 +152,8 @@ public class AdminUser implements User {
 
     private void updateProfile(Profile profileToUpdate, Scanner scanner) {
         System.out.println("Enter new first name (or press Enter to keep the current first name):");
+        // hoppa over och ignorera resten av raden efter att ha läst in intger
+        scanner.nextLine();
         String newFirstName = scanner.nextLine();
         if (!newFirstName.isEmpty()) {
             profileToUpdate.setFirstName(newFirstName);
